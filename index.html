@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script src="https://kit.fontawesome.com/ea6b11942b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   <!--NAV-->
+<nav class="navbar navbar-expand-md fixed-top">
+  <div class="container-fluid">
+      <a class="navbar-brand d-md-none d-sm-flex" href="#home">Home</a>
+      <button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#enlace">About me</a>
+              <a class="nav-link" href="#ProyectosEnlaces">Projects</a>
+              <a class="nav-link" href="#SetDeSkills">Skill Set</a>
+          </div>
+      </div>
+  </div>
+</nav>
+<!--FIN DE Menu de Navegacion-->
+
+      <!--Inicio de Header-->
+      <header>
+
+        <div class="container-fluid" id="Home">
+
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-md fixed-top">
+  <div class="container-fluid">
+      <a class="navbar-brand d-md-none d-sm-flex" href="#home">Home</a>
+      <button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#enlace">About me</a>
+              <a class="nav-link" href="#ProyectosEnlaces">Projects</a>
+              <a class="nav-link" href="#SetDeSkills">Skill Set</a>
+          </div>
+      </div>
+  </div>
+</nav>
+            </div>
+          </div>
+             
+              <div class="row">
+
+                  <div class="col-12  col-lg-6 presentation-image ">
+
+                        <div class="profile"></div>
+
+                  </div>
+
+                  <div class="col-12 col-lg-6 presentation-content justify-content-center">
+                        <div class="card" style="width: 32rem;" id="card-basic-info">
+                          <div class="card-body">
+                            <h1 class="card-title"><span id="text-fluor"><i class="fa-solid fa-code"></i></span> Hi, I'm <span id="text-fluor">Gilbert Lomeli</span></h1>
+                            <p class="card-text"><span id="text-fluor">Front-End Developer</span>
+                          <br>  "In the realm of code, I am the architect of dreams, crafting worlds where imagination and innovation knows no limits."</p>
+                    
+                          </div>
+                        </div>
+
+                  </div>
+
+              </div>
+
+      </header>
+
+      <!--ARTICLE start-->
+
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <!--START 1ST COL-->
+          <div class="col-12  Column-cards" id="CC-EMAIL">
+            <!--START FIRST CARD-->
+            <div class="card" id="info-cards">
+
+              <div class="card-body">
+
+                <h5 class="title-skills-work"><i class="fa-solid fa-envelope"></i> Email</h5>
+                <p class="card-text"><input type="email" id="correoInput" value="gillomdev@gmail.com" readonly></p>
+                <button id="btnEnviarCorreo" class="btn-hover"><i class="fa-solid fa-paper-plane"></i> Send Email</button>
+                <button onclick="copiarCorreo()" class="btn-hover"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <!-- Botón para descargar el CV -->
+                    <button onclick="abrirPDF()" class="btn-hover" id="btn-hover-download-cv"><i class="fa-solid fa-download"></i> Download CV</button>
+
+
+              </div>
+            </div>
+              <!--END 1ST CARD-->
+          </div>
+          <!--END 1ST COL-->
+
+          </div>
+          <!--END 2ND COL-->
+
+        </div>
+        <!--END ROW-->
+      </div>
+      <!--END CONTAINER FLUID-->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 Soft-Skills-holder">
+            <div  id="card-soft-skills">
+  
+              <h5 class="title-skills-work"><i class="fa-solid fa-microchip"></i> Skills</h5>
+              
+                <!-- DIV de SKILLS -->
+                <div class="ability-holder-soft-skills">
+                  <a href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/" target="_blank" class="btn-hover-tecno" ><i class="fa-brands fa-html5"></i> HTML</a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank" class="btn-hover-tecno" ><i class="fa-brands fa-css3-alt"></i> CSS</a>
+                  <a href="https://git-scm.com/book/es/v2" target="_blank" class="btn-hover-tecno" ><i class="fa-brands fa-git-alt"></i> Git</a>
+                  <a href="https://sass-lang.com/" target="_blank" class="btn-hover-tecno" ><i class="fa-brands fa-sass"></i> SASS</a>
+                  <a href="https://www.freecodecamp.org/news/what-is-javascript-definition-of-js/" target="_blank" class="btn-hover-tecno" ><i class="fa-brands fa-js"></i> JavaScript</a>
+                  <a href="https://www.w3schools.com/whatis/whatis_bootstrap.asp" target="_blank" class="btn-hover-tecno" id="enlace"><i class="fa-brands fa-bootstrap"></i> Bootstrap</a>
+                </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+
+    <article>
+
+      <!--ARTICLE BEGINING -->
+      <div class="container-fluid">
+        <div class="row">
+          <!--Start of Cols-->
+          <div class="col-12 col-md-6 about-me-holder" >
+            <div class="about-me mt-2 mx-5">
+              <h1 class="title-skills-work" ><i class="fa-solid fa-at"></i>About Me</h1>
+              <p>Specialized in <span id="text-fluor">HTML, CSS, JavaScript and Bootstrap with 4 Years of Experience</span>,
+                 in which I have been involved in various projects during my high school as well
+                  as at my local University <span id="text-fluor">Helping Voluntarily To Deploy Various Projects</span>, 
+                  despite At my young age I had the opportunity to work with <span id="text-fluor">C++, Sass, Java, 
+                    XML,
+                   PHP and MariaDB</span>. However, my greatest area of ​​opportunity and experience is in
+                    the Front - End in which I continue to <span id="text-fluor">Learn New Technologies</span> and methods day 
+                    by day.</p>
+            </div>
+            <div class="icons-social">
+              <a href="https://www.linkedin.com/in/gilbert-lomeli-20810b304/" target="_blank"><i class="fa-brands fa-linkedin-in" ></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a></i>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-6 img-code-holder">
+            <div class="img-code" id="SetDeSkills"></div>
+          </div>
+          <!--END OF Cols-->
+        </div>
+      </div>
+<!--End of ARTICLE-->
+    </article>
+    <!--START SOFT SKILLS-->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 Soft-Skills-holder">
+          <div  class="videoclub" id="card-soft-skills">
+
+            <h5 class="title-skills-work"><i class="fa-solid fa-cubes"></i> Soft-Skills</h5>
+            
+                <!-- DIV DE SOFT-SKILLS -->
+              <div class="ability-holder-soft-skills">
+
+                <a href="https://www.betterup.com/blog/what-is-teamwork" target="_blank" class="btn-hover-tecno"><i class="fa-solid fa-people-group"></i> Teamwork</a>
+                <a href="https://www.ccl.org/articles/leading-effectively-articles/what-is-leadership-a-definition/" target="_blank" class="btn-hover-tecno"><i class="fa-solid fa-person-rays"></i> Leadership</a>
+                <a href="https://www.walkme.com/glossary/adaptability/" target="_blank" class="btn-hover-tecno"><i class="fa-solid fa-expand"></i> Adaptability</a>
+              
+              </div>
+
+              <!-- DIV DE SOFT-SKILLS -->
+              <div class="ability-holder-soft-skills">
+                
+                <a href="https://www.coursera.org/articles/what-is-data-analysis-with-examples" target="_blank" class="btn-hover-tecno"><i class="fa-solid fa-database"></i> Data Analysis</a>
+              <a href="https://www.coursera.org/articles/what-is-data-communication" target="_blank" class="btn-hover-tecno"><i class="fa-solid fa-comment"></i> Communication</a>
+              <a href="https://asq.org/quality-resources/problem-solving" target="_blank" class="btn-hover-tecno"><i class="fa-solid fa-bug"></i> Problem-Solving</a>
+              <a href="https://www.coursera.org/articles/time-management" target="_blank" class="btn-hover-tecno"><i class="fa-solid fa-clock"></i> Time Managment</a>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- END SOFT SKILLS -->
+
+    <!--Start Work Experience-->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 Soft-Skills-holder">
+          <div  id="card-soft-skills">
+
+            <h5 class="title-skills-work"><i class="fa-solid fa-briefcase"></i> Work Experience</h5>
+            
+                <!-- DIV DE SOFT-SKILLS -->
+             
+                <p>
+
+                  My stay as a <span id="text-fluor">Freelancer</span> lasted <span id="text-fluor">1 year,</span>, I was in charge of <span id="text-fluor">Managing</span>, 
+                  <span id="text-fluor">Maintaining</span> and <span id="text-fluor">Creating</span> software as well as a landing page that could be used to
+                   facilitate <span id="text-fluor">Internal</span> requirements that included the basic use of languages ​​​​such as <span id="text-fluor">C ++</span> and <span id="text-fluor">Java</span>
+                    for a code review as well as the use of others such as <span id="text-fluor">JavaScript</span> included with <span id="text-fluor">HTML</span>,
+                     <span id="text-fluor">CSS</span> and <span id="text-fluor">Bootstrap</span> to develop more complex activities such as deploying a <span id="text-fluor">Static Website</span>
+                      that would be used as the main promotional item, although for <span id="text-fluor">Contractual Reasons</span> I cannot display the entire page since it is currently not active,
+                     I can show a similar product <span id="text-fluor">Developed</span> as an example by <span id="text-fluor">Me</span>.
+<br><br>
+                  During this period I was able to devote myself <span id="text-fluor">Full Time</span> to the <span id="text-fluor">Analysis</span>, <span id="text-fluor">Development</span>
+                   and <span id="text-fluor">Maintenance</span> of the website, where my main contact and boss was <span id="text-fluor">Ricky Martin</span>
+                    who received my progress as well as maintained constant <span id="text-fluor">Communication</span> to solve the problems
+                    that arose throughout the project. This website was <span id="text-fluor">Creatively Developed</span>, with a refreshing color palette that transmitted <span id="text-fluor">Calm</span> and
+                     <span id="text-fluor">Confidence</span> to the user to offer the best possible experience.
+             <br><br>       
+                  For <span id="text-fluor">Any Questions</span> or clarifications regarding my employer and my stay as a <span id="text-fluor">Freelancer</span> as well as my work, please contact:
+                  <br><br>
+                  <span id="text-fluor">Full name : <span id="neon-text">Ricky Martin</span></span>
+                  <br><br>
+                 <span id="text-fluor">Phone Number : <span id="neon-text">(951) 966-6892</span></span>
+
+                    </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!--STAR OF 2ND WORK EXPERIENCE-->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 Soft-Skills-holder">
+          <div  id="card-soft-skills">
+
+            <h5 class="title-skills-work"><i class="fa-solid fa-briefcase"></i> Work Experience</h5>
+            
+                <!-- DIV DE SOFT-SKILLS -->
+             
+                <p>
+
+                  I worked for a period of <span id="text-fluor">7 Months</span>, as an independent contractor or known
+                   as <span id="text-fluor">Freelancer</span> for a businessman who was looking to launch a static website
+                    regarding his <span id="text-fluor">Photography</span> work, which consisted of a type of portfolio 
+                    created with <span id="text-fluor">HTML, CSS</span> and <span id="text-fluor">JavaScript</span> that
+                     showed the quality of his work, additionally as part of the requirements this website was responsive
+                      as well as designed under the <span id="text-fluor">"Mobile-First"</span> concept so it had great
+                      <span id="text-fluor">Adaptability</span> for any user. Likewise, during this period that my contract
+                       lasted, I focused on maintaining the website and incorporating changes desired by the client.
+<br><br>
+                    
+                  For <span id="text-fluor">Any Questions</span> or clarifications regarding my employer and my stay as <span id="text-fluor">Freelancer</span> as well as my work, please contact:
+                  <br><br>
+                  <span id="text-fluor">Full name : <span id="neon-text"> David Martinez </span></span>
+                  <br><br>
+                 <span id="text-fluor">Phone Number : <span id="neon-text"> +52 311-740-2134 </span></span>
+
+                    </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--END WORK EXPERIENCE-->
+
+    <!--START PROYECTS-->
+
+    <div class="container-fluid" id="ProyectosEnlaces">
+      <!--MAIN HOLDER PROJECT CARDS-->
+      <div class="row">
+        <!--MAIN ROW HOLDER-->
+        <div class="col-12 col-lg-5  main-project-holder">
+          <!--PRIMARY DIV LEFT DESCRIPTION HOLDER-->
+          <div class="project-description-holder" id="RickyM">
+            <!--CONTENT HOLDER LEFT DESCRIPTION-->
+            <h2>Start-Up</h2>
+            <p>During this project I developed a <span id="text-fluor">Landing Page</span> which was responsible for 
+              <span id="text-fluor">Reaching</span> out to new clients about our services offered as well as our work
+               ethic which <span id="text-fluor">Established a Method</span> of <span id="text-fluor">Contact</span> for 
+               <span id="text-fluor">New</span> and <span id="text-fluor">Future Clients</span>. 
+              Although the development was not for an international company, it was large enough to be <span id="text-fluor">Established</span>
+               throughout the country (USA), this <span id="text-fluor">Project</span> places specific emphasis on the 
+               <span id="text-fluor">Proposed Resources</span> and how a dynamic website is created for the user, prioritizing
+                the <span id="text-fluor">Interaction</span> that the <span id="text-fluor">User</span> can have with the
+                 <span id="text-fluor">Environment</span>, making it equally intuitive to facilitate its use.</p>
+            <!--END OF CONTENT-->
+          </div>
+          <!--END FIRST DIV PROJECT DESCRIPTION HOLDER-->
+        </div>
+        <!-- END SECOND DIV  MAIN PROJECT HOLDER-->
+
+        <div class="col-12 col-lg-4  main-project-holder">
+           <!--PRIMARY DIV LEFT DESCRIPTION HOLDER-->
+          <div class="project-description-holder" id="img-proyect-des-holder">
+            <!--CONTENT HOLDER LEFT DESCRIPTION-->
+            <!--END OF CONTENT-->
+          </div>
+
+        </div>
+
+        <div class="col-12 col-lg-3  main-project-holder">
+            <!--PRIMARY DIV LEFT DESCRIPTION HOLDER-->
+            <div class="project-description-holder">
+              <!--CONTENT HOLDER LEFT DESCRIPTION-->
+              <h1>Technologies</h1>
+
+              <div class="tech-used" id="TCU">
+                 
+                <a href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/" class="btn-hover-tecno" target="_blank"><i class="fa-brands fa-html5"></i> HTML</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank" class="btn-hover-tecno"><i class="fa-brands fa-css3-alt"></i> CSS</a>
+                  <a href="https://www.freecodecamp.org/news/what-is-javascript-definition-of-js/" class="btn-hover-tecno"><i class="fa-brands fa-js"></i> JavaScript</a>
+                <a href="https://www.w3schools.com/whatis/whatis_bootstrap.asp" target="_blank" class="btn-hover-tecno"><i class="fa-brands fa-bootstrap"></i> Bootstrap</a>
+               
+              </div>
+              <!--END OF CONTENT-->
+            </div>
+          <!--END OF MAIN-PROJECT HOLDER-->
+        </div>
+        <!--END OF ROW-->
+      </div>
+      <!--END OF CONTAINER FLUID-->
+    </div>
+
+      <!--START PROYECT 2-->
+
+      <div class="container-fluid">
+        <!--MAIN HOLDER PROJECT CARDS-->
+        <div class="row">
+          <!--MAIN ROW HOLDER-->
+          <div class="col-12 col-lg-4  main-project-holder">
+            <!--PRIMARY DIV LEFT DESCRIPTION HOLDER-->
+            <div class="project-description-holder" id="RickyM">
+              <!--CONTENT HOLDER LEFT DESCRIPTION-->
+              <h2>The World</h2>
+              <p>
+                During this <span id="text-fluor">Project</span> I was in charge of simulating a 
+                <span id="text-fluor">Travel Agency</span> which uses both common
+                 and little-known tourist <span id="text-fluor">Destinations</span> in order to schedule an <span id="text-fluor">Adventure</span>
+                  or <span id="text-fluor">Experience</span> which
+                  consists of trips specifically scheduled by the client at a specific time that the user reserves.
+                   Likewise, we try to offer a <span id="text-fluor">Complete Experience</span> so that the user,
+                    through our services, can
+                    <span id="text-fluor">Experience Nature</span> and connect with it, offering more than just a trip but the opportunity 
+                    to connect with <span id="text-fluor">Oneself</span> and <span id="text-fluor">Nature</span>.
+                </p>
+              <!--END OF CONTENT-->
+            </div>
+            <!--END FIRST DIV PROJECT DESCRIPTION HOLDER-->
+          </div>
+          <!-- END SECOND DIV  MAIN PROJECT HOLDER-->
+  
+          <div class="col-12 col-lg-4  main-project-holder">
+             <!--PRIMARY DIV LEFT DESCRIPTION HOLDER-->
+            <div class="project-description-holder" id="img-proyect-pai-holder">
+              <!--CONTENT HOLDER LEFT DESCRIPTION-->
+              <!--END OF CONTENT-->
+            </div>
+  
+          </div>
+  
+          <div class="col-12 col-lg-4  main-project-holder">
+              <!--PRIMARY DIV LEFT DESCRIPTION HOLDER-->
+              <div class="project-description-holder" >
+                <!--CONTENT HOLDER LEFT DESCRIPTION-->
+                <h1>Technologies</h1>
+  
+                <div class="tech-used" id="TCU">
+                  <a href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/" class="btn-hover-tecno" target="_blank"><i class="fa-brands fa-html5"></i> HTML</a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank" class="btn-hover-tecno"><i class="fa-brands fa-css3-alt"></i> CSS</a>
+                  <a href="https://www.freecodecamp.org/news/what-is-javascript-definition-of-js/" class="btn-hover-tecno"><i class="fa-brands fa-js"></i> JavaScript</a>
+                  <a href="https://www.w3schools.com/whatis/whatis_bootstrap.asp" target="_blank" class="btn-hover-tecno"><i class="fa-brands fa-bootstrap"></i> Bootstrap</a>
+                </div>
+                <!--END OF CONTENT-->
+              </div>
+            <!--END OF MAIN-PROJECT HOLDER-->
+          </div>
+          <!--END OF ROW-->
+        </div>
+        <!--END OF CONTAINER FLUID-->
+      </div>
+
+    <!--END SECOND PY-->
+
+    <!--Third PROYECT HOLDER-->
+   
+
+    <div class="container-fluid">
+      <!--MAIN HOLDER PROJECT CARDS-->
+      <div class="row">
+        <!--MAIN ROW HOLDER-->
+        <div class="col-12 col-lg-5  main-project-holder">
+          <!--PRIMARY DIV LEFT DESCRIPTION HOLDER-->
+          <div class="project-description-holder" id="RickyM">
+            <!--CONTENT HOLDER LEFT DESCRIPTION-->
+            <h2>Random Dice & Calculator</h2>
+            <p>This <span id="text-fluor">APP</span> is simple and easy to use. It´s a <span id="text-fluor">Dice</span> app that <span id="text-fluor">Randomly</span> displays several possible <span id="text-fluor">Outcomes</span>,  just as if 2 dice were <span id="text-fluor">Thrown</span> into the air, 
+              and has a button to start the dice draw, while at the same <span id="text-fluor">Time</span> increasing a characteristic <span id="text-fluor">Audio</span> imitating the <span id="text-fluor">Sound</span> of when the dice are thrown.
+              <br><br>
+              Another <span id="text-fluor">Project</span> was also attached, which is a functional <span id="text-fluor">Calculator</span> that even detects types of <span id="text-fluor">Bugs</span> and also performs the <span id="text-fluor">Requested</span> operations <span id="text-fluor">Correctly</span> and <span id="text-fluor">Precisely</span>. It has a colorful and easy-to-identify design so that its operation <span id="text-fluor">Intuitive</span> for the <span id="text-fluor">User</span>. 
+            </p>
+            <!--END OF CONTENT-->
+          </div>
+          <!--END FIRST DIV PROJECT DESCRIPTION HOLDER-->
+        </div>
+        <!-- END SECOND DIV  MAIN PROJECT HOLDER-->
+
+        <div class="col-12 col-lg-4  main-project-holder" >
+           <!--PRIMARY DIV LEFT DESCRIPTION HOLDER-->
+          <div class="project-description-holder" id="TwoProyect">
+            <!--CONTENT HOLDER LEFT DESCRIPTION-->
+            <!--END OF CONTENT-->
+          </div>
+
+        </div>
+
+        <div class="col-12 col-lg-3  main-project-holder">
+            <!--PRIMARY DIV RIGHT DESCRIPTION HOLDER-->
+            <div class="project-description-holder">
+              <!--CONTENT HOLDER LEFT DESCRIPTION-->
+              <h1>Technologies</h1>
+
+              <div class="tech-used">
+                <a href="https://www.java.com/en/download/help/whatis_java.html" class="btn-hover-tecno" target="_blank"><i class="fa-brands fa-java"></i> Java</a>
+                <a href="https://www.geeksforgeeks.org/overview-of-android-studio/" class="btn-hover-tecno" target="_blank"><i class="fa-brands fa-android"></i><br> Android Studio</a>
+                <a href="https://www.google.com/drive/" target="_blank" class="btn-hover-tecno"><i class="fa-brands fa-google-drive"></i> Drive</a>
+
+              </div>
+              <!--END OF CONTENT-->
+            </div>
+          <!--END OF MAIN-PROJECT HOLDER-->
+        </div>
+        <!--END OF ROW-->
+      </div>
+      <!--END OF CONTAINER FLUID-->
+    </div>
+
+    <!-- FINAL PART -->
+
+    <div class="container-fluid Develop">
+     <div class="row">
+      <!-- START OF COLS-->
+       <div class="col-12 d-flex justify-content-center my-5">
+        <div class="container">
+          <div class="palette">
+            <div class="color"><span>#f887ff</span></div>
+            <div class="color"><span>#de004e</span></div>
+            <div class="color"><span>#860029</span></div>
+            <div class="color"><span>#321450</span></div>
+            <div class="color"><span>#29132e</span></div>
+          </div>
+          <div id="stats">
+            <span>Palette Used</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+              <path d="M4 7.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S5.5 9.83 5.5 9 4.83 7.5 4 7.5zm10 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S9.83 7.5 9 7.5z"></path>
+            </svg>
+          </div>
+        </div>
+       </div>
+     </div>
+    </div>
+
+      <script src="/JS/script.js"></script>
+    </body>
+</html>
