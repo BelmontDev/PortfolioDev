@@ -260,7 +260,7 @@ button{
 }
 #card-soft-skills{
     margin-bottom: 80px;
-    padding: 30px;
+    padding: 40px;
     background-color: #29132e;
     color: #fff;
     display: flex;
@@ -280,7 +280,7 @@ button{
         flex-direction: column;
     }
     .ability-holder-soft-skills a{
-        margin: 10px;
+        margin: 15px;
     }
 }
 
