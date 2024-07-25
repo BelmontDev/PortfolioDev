@@ -26,7 +26,7 @@ function copiarCorreo() {
 
 function abrirPDF() {
   // Ruta al archivo PDF
-  var pdfURL = "JS/ResumeGLU.pdf";
+  var pdfURL = "JS/ResumeGiLU.pdf";
   
   // Abre el PDF en una nueva pestaña
   window.open(pdfURL, "_blank");
